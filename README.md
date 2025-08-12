@@ -56,8 +56,7 @@ Follow these steps to run the application on your PC:
 1. Install and start MySQL server.
 2. Create a new database (e.g., `umar_db`). (You can change the database name from the code to your_database_name)
 3. Import the provided SQL script to create required tables.
-
-Update database credentials in the application’s configuration file (if applicable).
+4. Update database credentials in the application’s configuration file (if applicable).
 
 ### 3️⃣ Run the Project
 1. Open IntelliJ IDEA.
