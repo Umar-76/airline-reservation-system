@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="flightStage" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="488.0" prefWidth="757.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.airlinereservationsystem.viewFlight">
+    <children>
+        <ScrollPane prefHeight="488.0" prefWidth="757.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <content>
+                <AnchorPane prefHeight="488.0" prefWidth="757.0" style="-fx-background-color: #D2D4EA;">
+                    <children>
+                        <Label layoutX="169.0" layoutY="34.0" text="Search">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Label>
+                        <ImageView fx:id="searchImage" fitHeight="18.0" fitWidth="17.0" layoutX="213.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../../../../images/icons8_search_26px.png" />
+                            </image></ImageView>
+                        <TextField fx:id="searchTextField" layoutX="235.0" layoutY="32.0" prefHeight="25.0" prefWidth="290.0" />
+                        <TableView fx:id="flightTableView" layoutX="10.0" layoutY="62.0" prefHeight="420.0" prefWidth="808.0">
+                            <columns>
+                                <TableColumn fx:id="flightidCol" prefWidth="55.0" text="Flight_id" />
+                                <TableColumn fx:id="flightnameCol" prefWidth="147.0" text="Flight_name" />
+                                <TableColumn fx:id="flighttypeCol" prefWidth="110.0" text="Flight_type" />
+                                <TableColumn fx:id="placeDeptCol" minWidth="9.0" prefWidth="123.0" text="Place_of_departure" />
+                                <TableColumn fx:id="placeArriveCol" minWidth="0.0" prefWidth="140.0" text="Place_of_arrival" />
+                                <TableColumn fx:id="arrivalTimeCol" minWidth="0.0" prefWidth="79.0" text="Arrival_time" />
+                                <TableColumn fx:id="deptTimeCol" prefWidth="71.0" text="Dept_time" />
+                                <TableColumn fx:id="statusCol" prefWidth="74.0" text="Status" />
+                            </columns>
+                        </TableView>
+                  <Button fx:id="closeButton" layoutX="597.0" layoutY="17.0" mnemonicParsing="false" onAction="#closeBtnClicked" prefHeight="25.0" prefWidth="100.0" stylesheets="@../../../css/close_button_style.css" text="Close" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                    </children>
+                </AnchorPane>
+            </content>
+        </ScrollPane>
+    </children>
+</AnchorPane>

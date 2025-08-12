@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="594.0" prefWidth="1028.0" style="-fx-background-color: #D2D4EA;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.airlinereservationsystem.AdminHomeDashboardController">
+   <children>
+      <VBox prefHeight="569.0" prefWidth="265.0" style="-fx-background-color: #7A80C0;" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <ImageView fx:id="airlinesImage" fitHeight="138.0" fitWidth="146.0" layoutX="60.0" layoutY="14.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../images/kisspng-airplane-flight-aircraft-drawing-image-5d2b447b36b9c3.7960426615631166672242.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="73.0" layoutY="134.0" text="Delta Airlines" textFill="WHITE" underline="true">
+                     <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                     </font>
+                  </Label>
+               </children></AnchorPane>
+            <Button fx:id="flightButton" alignment="BASELINE_LEFT" graphicTextGap="15.0" mnemonicParsing="false" onAction="#flightBtnClicked" prefHeight="39.0" prefWidth="265.0" stylesheets="@../../../css/button_style.css" text="Flight" textFill="WHITE">
+               <graphic>
+                  <ImageView fx:id="airportIcon" fitHeight="31.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../images/icons8_airport_26px_1.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <padding>
+                  <Insets left="55.0" />
+               </padding>
+            </Button>
+            <Button fx:id="userButton" alignment="BASELINE_LEFT" graphicTextGap="15.0" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#userBtnClicked" prefHeight="39.0" prefWidth="265.0" stylesheets="@../../../css/button_style.css" text="User" textFill="WHITE">
+               <graphic>
+                  <ImageView fx:id="UserIcon" fitHeight="31.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../images/icons8_add_user_male_26px_1.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <padding>
+                  <Insets left="55.0" />
+               </padding>
+            </Button>
+            <Button fx:id="bookTicketButton" alignment="BASELINE_LEFT" graphicTextGap="15.0" layoutX="10.0" layoutY="49.0" mnemonicParsing="false" onAction="#bookBtnClicked" prefHeight="39.0" prefWidth="265.0" stylesheets="@../../../css/button_style.css" text="Book Ticket" textFill="WHITE">
+               <graphic>
+                  <ImageView fx:id="TicketIcon" fitHeight="31.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../images/icons8_new_ticket_24px_1.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <padding>
+                  <Insets left="55.0" />
+               </padding>
+            </Button>
+            <Button fx:id="viewTicketButton" alignment="BASELINE_LEFT" graphicTextGap="15.0" layoutX="10.0" layoutY="88.0" mnemonicParsing="false" onAction="#viewBtnClicked" prefHeight="39.0" prefWidth="265.0" stylesheets="@../../../css/button_style.css" text="View Tickets" textFill="WHITE">
+               <graphic>
+                  <ImageView fx:id="viewTicketIcon" fitHeight="31.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../images/icons8_details_26px_1.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <padding>
+                  <Insets left="55.0" />
+               </padding>
+            </Button>
+            <Button fx:id="logoutButton" alignment="BASELINE_LEFT" graphicTextGap="15.0" layoutX="10.0" layoutY="366.0" mnemonicParsing="false" onAction="#logoutBtnClicked" prefHeight="39.0" prefWidth="265.0" stylesheets="@../../../css/button_style.css" text="Log Out" textFill="WHITE">
+               <graphic>
+                  <ImageView fx:id="logoutIcon" fitHeight="31.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../images/icons8_logout_rounded_left_26px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <padding>
+                  <Insets left="55.0" />
+               </padding>
+            </Button>
+         </children>
+      </VBox>
+      <HBox layoutX="265.0" prefHeight="100.0" prefWidth="765.0" spacing="50.0" style="-fx-background-color: #7F55AA;" AnchorPane.leftAnchor="265.0" AnchorPane.rightAnchor="-2.0">
+         <children>
+            <ImageView fx:id="userImageview" fitHeight="102.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true" />
+            <VBox prefHeight="200.0" prefWidth="100.0" spacing="5.0">
+               <children>
+                  <TextField fx:id="userNameTextField" editable="false" style="-fx-background-color: #7F55AA;">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin></TextField>
+                  <Label fx:id="dateLabel" prefHeight="32.0" prefWidth="100.0" textFill="#89d046">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="timeLabel" prefHeight="28.0" prefWidth="100.0" textFill="#4499ee">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Label layoutX="24.0" layoutY="43.0" text="Dashboard" textFill="WHITE" underline="true">
+                     <font>
+                        <Font name="System Bold" size="22.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+         <padding>
+            <Insets left="15.0" />
+         </padding>
+      </HBox>
+      <AnchorPane layoutX="278.0" layoutY="103.0" prefHeight="488.0" prefWidth="757.0" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <AnchorPane fx:id="mainStage" layoutX="-12.0" layoutY="-12.0" prefHeight="488.0" prefWidth="757.0" AnchorPane.bottomAnchor="-3.0" AnchorPane.rightAnchor="0.0" />
+         </children></AnchorPane>
+   </children>
+</AnchorPane>

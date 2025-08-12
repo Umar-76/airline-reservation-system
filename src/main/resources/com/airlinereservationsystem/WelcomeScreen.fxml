@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="488.0" prefWidth="757.0" style="-fx-background-color: #D2D4EA;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.airlinereservationsystem.WelcomeScreen">
+   <children>
+      <ImageView fx:id="backgroundImageView" fitHeight="488.0" fitWidth="757.0" opacity="0.33" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../images/annapurna_massif_mountains_4k-1366x768.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="138.0" layoutY="75.0" text="Weclome to DELTA AIRLINES!" textFill="#6538b9">
+         <font>
+            <Font name="System Bold Italic" size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="187.0" layoutY="178.0" text="Your one stop solution for trouble-free travels" textFill="#931c97">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
